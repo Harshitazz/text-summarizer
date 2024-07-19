@@ -6,8 +6,9 @@ client = OpenAI(
 )
 
 def summarize_text(text):
-    prompt = f"Summarize the following text into crisp and precise bullet points:\n\n{text}\n\nSummary:"
-    
+    prompt = (f"Please summarize the following text into clear and concise bullet points:\n\n"
+              f"{text}\n\n"
+              f"Summary (in bullet points):")    
     response = client.chat.completions.create(
         messages=[
             {
