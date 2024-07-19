@@ -2,6 +2,18 @@
 
 A command-line tool to summarize text into crisp, bullet-point format using the OpenAI-compatible API with the Qwen2 0.5B model and the Click library.
 
+
+ ## Run the CLI Tool:
+
+    - To summarize direct text input:
+        ```sh
+        python summarize_tool.py --text "This is an example text that needs to be summarized."
+        ```
+
+    - To summarize text from a file:
+        ```sh
+        python summarize_tool.py --file path/to/your/textfile.txt
+        ```
 ## Installation
 
 1. Clone the repository:
@@ -34,17 +46,7 @@ A command-line tool to summarize text into crisp, bullet-point format using the 
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-6. Run the CLI Tool:
 
-    - To summarize direct text input:
-        ```sh
-        python summarize_tool.py --text "This is an example text that needs to be summarized."
-        ```
-
-    - To summarize text from a file:
-        ```sh
-        python summarize_tool.py --file path/to/your/textfile.txt
-        ```
 
 ### Summary
 
